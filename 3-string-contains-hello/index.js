@@ -9,18 +9,19 @@ let input = getargs.getStringArg()
 /**** Do not modify anything above this line ****/
 
 // TODO make sure that the user entered a string
-if () {
-  //TODO use console.log to add a usage statement and let the user know that if a string contains a space it must be quoted
+if (!input) {
+  console.log("usage': node 3-string-contains-hello <stringer>");
+  console.log("To include spaces, use qutoes");
 } 
 
 // check to see if string contains hello
 // if it does report back the position in the string where it begins
 
 else {
-  // TODO write a logical expression to test if the input contains a "hello"
-  if () {
-    // TODO use console.log and a template literal at what position the hello was found
-  } else {
-    // TODO use console.log to indicate that the hello was not found
+  
+  if (input.indexOf('hello') > -1) {
+    console.log('hello was found at position ${input.indexOf('hello')} of the string ${input}');
+  } 
+  else {
+    console.log('hello was not found in the string ${input}.');
   }
-}
