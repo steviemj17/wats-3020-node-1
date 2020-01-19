@@ -10,3 +10,13 @@
 // get an integer using getargs
 let getargs = require("../modules/getargs/index.js");
 let input = getargs.getIntegerArg();
+
+if (isNaN(input) || !Number.isInteger(input)) {
+    console.log("usage: node 5-mini-app <integer>");
+}
+
+else {
+    let dollars = Math.floor((input / 100));
+    let pennies = input % 100;
+    console.log('${input} pennies is ${dollars} dollars and ${pennies} cents.');
+}
