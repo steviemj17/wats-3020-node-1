@@ -47,23 +47,27 @@ console.log("string + null ", STRING_VALUE + NULL);
 
 console.log("---- assignment operator ----")
 let s1 = STRING_VALUE
+console.log('s1:', s1);
 let s2 = STRING_VALUE
+console.log('s1:', s1, 's2:', s2);
 let s3 = s1 + s2
+console.log('s1:', s1, 's2:', s2, 's3:', s3);
 s1 += s2
-//TODO console.log the values of s1, s2, s3 after each statement
-console.log()
+console.log('s1:', s1, 's2:', s2, 's3:', s3);
 
+
+//TODO console.log the values of s1, s2, s3 after each statement
 // test truthy/falsy using == for string, empty string, null and undefined
 // use ternary operator to determine if the value would be treated as true or false
 
 //TODO add the ternary operation to see how JS converts non boolean types into truthy/falsy
 console.log("---- Test truthy/falsy using ternary operator ----")
-console.log("string is  ", )
-console.log("int is ", )
-console.log("empty string is  ", )
-console.log("undefined is ", )
-console.log("null is ", )
-console.log("0 is  ", )
-console.log("NaN is   ", )
+console.log("string is  ", STRING_VALUE ? true : false);
+console.log("int is ", INT_VALUE ? true : false);
+console.log("empty string is  ", EMPTY_STRING_VALUE ? true : false);
+console.log("undefined is ", UNDEFINED ? true : false);
+console.log("null is ", NULL ? true : false);
+console.log("0 is  ", INT_ZERO ? true : false);
+console.log("NaN is   ", NAN ? true : false);
 
 process.exit()
